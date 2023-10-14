@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout 1</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style type="text/tailwindcss">
+    @layer components{
+      .li-elements{
+        @apply bg-white m-3 p-3 h-12 w-9 flex gap-3 justify-center 
+      }
+    }
+  </style>
+</head>
+
+<body class="font-semibold flex gap-4 justify-center text-center h-full">
+  <section id="green" class="bg-green-200 order-3 p-7">
+    <p>GREEN</p>
+  </section>
+  <section id="yellow" class="bg-yellow-200 order-1 p-7">
+    <p>YELLOW</p>
+    <ul>
+      <li class="li-elements">1</li>
+      <li class="li-elements">2</li>
+      <li class="li-elements">3</li>
+      <li class="li-elements">4</li>
+    </ul>
+  </section>
+  <section id="orange" class="bg-orange-200 order-4 p-7 w-1/5 text-left">
+    <p>ORANGE</p>
+  </section>
+  <section id="red" class="bg-red-200 order-2 p-7">
+    <p>RED</p>
+    <ul>
+      <li class="li-elements">A</li>
+      <li class="li-elements">B</li>
+      <li class="li-elements">C</li>
+      <li class="li-elements">D</li>
+    </ul>
+  </section>
+  <section id="blue" class="bg-blue-200 order-5 p-7">
+    <p>BLUE</p>
+  </section>
+</body>
+
+</html>
